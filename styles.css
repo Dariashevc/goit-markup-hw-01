@@ -20,3 +20,18 @@ color:#4d5ae5;
 .studio:focus {
     color: #404bbf
 }
+.address {
+    font-style: normal
+}
+.email {
+    font-size: 16px
+    line-height: 1.5
+    letter-spacing: 0.02em
+    color: #434455;
+}
+.email:hover {
+    color: #404bbf
+}
+.email:focus {
+    color: #404bbf
+}
