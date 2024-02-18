@@ -14,6 +14,11 @@ a {
         display: block; 
     }
 
+    /* header */
+.header {
+    border-bottom: 1px solid #e7e9fc;
+    
+}
 .webstudio {
     font-family: "Raleway", sans-serif;
 font-weight: 700;
@@ -51,6 +56,8 @@ color:#4d5ae5;
 .email:focus {
     color: #404bbf
 }
+
+/* main */
 .effective-solutions {
     background-color:#2e2f42;
 }
@@ -132,6 +139,8 @@ color:#4d5ae5;
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+/* footer */
 .footer {
     background-color :#2e2f42 ;
 }
@@ -142,7 +151,4 @@ color:#4d5ae5;
 }
 .span {
     color: #f4f4fd;
-}
-.img {
-    display: block;
 }
