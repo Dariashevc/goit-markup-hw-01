@@ -110,6 +110,13 @@ margin-right: 76px
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+    display: block;
+    min-width: 169p;
+    height: 56px;
+    height: 56px;
+    border-radius: 4px;
+    cursor: pointer;
+
 }
 .button:hover {
     background-color: #404BBF
