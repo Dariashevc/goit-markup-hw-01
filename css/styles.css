@@ -65,6 +65,11 @@ margin-right: 76px
 .address {
     font-style: normal
 }
+
+.address-menu {
+    display: flex;
+    gap: 40px;
+}
 .email {
     font-size: 16px;
     line-height: 1.5;
