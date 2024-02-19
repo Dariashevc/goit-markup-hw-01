@@ -86,6 +86,8 @@ margin-right: 76px
 }
 
 /* main */
+
+/* section 0 */
 .effective-solutions {
     background-color:#2e2f42;
     padding-top: 188px; 
@@ -97,6 +99,7 @@ margin-right: 76px
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
+    max-width: 496px;
 }
 .button {
     background-color: #4D5AE5;
