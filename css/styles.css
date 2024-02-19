@@ -54,6 +54,11 @@ margin-right: 76px
 .studio:focus {
     color: #404bbf
 }
+.menu-header {
+    display: flex;
+    gap: 40px;
+    
+}
 .address {
     font-style: normal
 }
