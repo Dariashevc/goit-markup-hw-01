@@ -86,6 +86,8 @@ margin-right: 76px
 /* main */
 .effective-solutions {
     background-color:#2e2f42;
+    padding-top: 188px; 
+    padding-bottom: 188px;
 }
 .for-your-business {
     font-size: 56px;
