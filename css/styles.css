@@ -21,12 +21,12 @@ a {
 }
 .div-header {
     display: flex;
-    width: 1158px;
-    margin: 0 auto;
-container: red ;
-
 }
 
+.container {
+    width: 1158px;
+    margin: 0 auto;
+}
 .webstudio {
     font-family: "Raleway", sans-serif;
 font-weight: 700;
