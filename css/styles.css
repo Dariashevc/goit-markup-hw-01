@@ -17,7 +17,12 @@ a {
     /* header */
 .header {
     border-bottom: 1px solid #e7e9fc;
-    
+
+}
+.div-header {
+    display: flex;
+    container;
+    width: 1158px;
 }
 .webstudio {
     font-family: "Raleway", sans-serif;
