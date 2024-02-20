@@ -165,8 +165,12 @@ margin-right: 76px
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+/* section 2 */
 .our {
-    background-color: #F4F4FD
+    background-color: #F4F4FD;
+    padding-top: 120px; 
+    padding-bottom: 120px;
 }
 .team {
     font-size: 36px;
@@ -175,6 +179,7 @@ margin-right: 76px
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42 ;
+    margin-bottom: 72px;
 }
 .markli {
     background-color: #FFFFFF
