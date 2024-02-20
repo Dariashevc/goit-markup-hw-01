@@ -41,7 +41,9 @@ line-height: 1.17 ;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color:#4d5ae5;
-margin-right: 76px
+margin-right: 76px;
+display: inline-block;
+margin-bottom: 16px;
 }
 
 .menu-header {
@@ -233,7 +235,7 @@ margin-right: 76px
 
 }
 .portfolio-li {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 48px) / 3);
 }
 .portfolio-div {
     padding: 32px 16px;
@@ -261,11 +263,14 @@ margin-right: 76px
 /* footer */
 .footer {
     background-color :#2e2f42 ;
+    padding-top: 100px; 
+    padding-bottom: 100px;
 }
 .footerp {
     line-height: 1.5;
     color:  #F4F4FD;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    max-width: 264px;
 }
 .span {
     color: #f4f4fd;
