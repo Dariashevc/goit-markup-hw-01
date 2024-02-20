@@ -125,6 +125,12 @@ margin-right: 76px
 .button:focus {
     background-color: #404BBF
 }
+
+/* section 1 */
+.section-advantages {
+    padding-top: 120px; 
+    padding-bottom: 120px;
+}
 .advantages {
     font-weight: 500;
     font-size: 20px;
