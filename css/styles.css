@@ -131,7 +131,9 @@ margin-right: 76px
     padding-top: 120px; 
     padding-bottom: 120px;
 }
-
+.visually-hidden {
+    visibility: hidden;
+}
  
 .advantages {
     font-weight: 500;
