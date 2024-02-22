@@ -134,7 +134,7 @@ margin-bottom: 16px;
     padding-top: 188px; 
     padding-bottom: 188px;
 }
-.h1-solutions {
+.h-one-solutions {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -204,7 +204,7 @@ margin-bottom: 16px;
     padding-top: 120px; 
     padding-bottom: 120px;
 }
-.team-h2 {
+.team-h-two {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -230,7 +230,7 @@ margin-bottom: 16px;
     padding-bottom: 32px;
 
 }
-.person-h3 {
+.person-h-three {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -253,7 +253,7 @@ margin-bottom: 16px;
     padding-top: 120px; 
     padding-bottom: 120px;
 }
-.portfolio-h2{
+.portfolio-h-two{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -276,7 +276,7 @@ margin-bottom: 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
-.h3-app {
+.h-three-app {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2 ;
