@@ -108,6 +108,8 @@ margin-bottom: 16px;
     padding-top: 24px; 
     padding-bottom: 24px;
     display: block;
+    position: relative;
+    color: #404bbf;
 }
 .webstudio-li:hover {
     color: #404bbf
