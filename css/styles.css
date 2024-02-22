@@ -183,7 +183,7 @@ margin-bottom: 16px;
  .advantages-li {
     width: calc((100% - 72px) / 4);
  }
-.h1-advantages {
+.h-two-advantages {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
