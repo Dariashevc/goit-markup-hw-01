@@ -118,6 +118,10 @@ margin-bottom: 16px;
     color: #404bbf
 }
 
+.webstudio-li::after {
+    content: "";
+    width: 100%
+}
 .address {
     font-style: normal
 }
