@@ -642,7 +642,8 @@ margin-bottom: 16px;
     justify-content: center;
     fill: transparent;
 }
-.span-label-user-privacy:checked {
+.checkbox:checked,
+.span-label-user-privacy {
     background-color:#404bbf;
     border: none;
     fill: #F4F4FD;
