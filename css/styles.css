@@ -304,6 +304,7 @@ margin-bottom: 16px;
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-top: 8px;
 }
 .social-media-ul-two {
     display: flex;
