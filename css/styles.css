@@ -294,6 +294,11 @@ margin-bottom: 16px;
     justify-content: center;
     gap: 24px;
 }
+.social-media-ul-two {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
 .social-media-li {
     width: 40px;
     height: 40px;
