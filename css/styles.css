@@ -455,10 +455,9 @@ margin-bottom: 16px;
 }
 .the-form {
     display: flex; 
-}
-.form-label {
     gap: 24px;
 }
+
 .form-input {
     width: 264px;
     height: 40px;
@@ -471,6 +470,6 @@ margin-bottom: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff; 
-    
+
 }
 
