@@ -643,9 +643,9 @@ margin-bottom: 16px;
     fill: transparent;
 }
 
-.checkbox:checked,
-.label-user-privacy,
-.span-label-user-privacy,
+.checkbox:checked 
+.label-user-privacy
+.span-label-user-privacy
  {
     background-color:#404bbf;
     border: none;
