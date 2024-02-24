@@ -619,19 +619,6 @@ margin-bottom: 16px;
 .label-div-modal-small {
     margin-bottom: 24px; 
 }
-.input-modal-small {
-    position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-}
 .label-user-privacy {
     font-size: 12px;
     line-height: 1.17;
@@ -649,4 +636,10 @@ margin-bottom: 16px;
     align-items: center;
     justify-content: center;
     fill: transparent;
+}
+.span-label-user-privacy:checked {
+    background-color:#404bbf;
+    border: none;
+    fill: #F4F4FD;
+    
 }
