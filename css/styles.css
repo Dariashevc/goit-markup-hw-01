@@ -398,8 +398,11 @@ margin-bottom: 16px;
 .footer-div {
     display: flex;
     align-items: baseline;
-    margin-right: 120px;
+ 
 
+}
+.footer-div-two {
+    margin-right: 120px;
 }
 .footer-p {
     line-height: 1.5;
