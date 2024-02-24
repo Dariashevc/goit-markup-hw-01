@@ -643,7 +643,7 @@ margin-bottom: 16px;
     fill: transparent;
 }
 
-.checkbox:checked,
+.checkbox,
 .span-label-user-privacy:checked {
     background-color:#404bbf;
     border: none;
