@@ -619,6 +619,11 @@ margin-bottom: 16px;
 .label-div-modal-small {
     margin-bottom: 24px; 
 }
+.label-div-modal-small:checked {
+    background-color:#404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
 .label-user-privacy {
     font-size: 12px;
     line-height: 1.17;
