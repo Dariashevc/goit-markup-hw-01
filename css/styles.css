@@ -71,11 +71,7 @@ p {
 }
 .div-header
  {
-    display: flex;
-    width: 1158px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px; 
+    display: flex;; 
     container: normal;
     align-items: center;
 }
@@ -98,6 +94,7 @@ display: inline-block;
 padding-top: 17.5px;
 padding-bottom:  17.5px;
 }
+
 
 .webstudio-footer {
     font-family: 'Raleway', sans-serif;
@@ -560,6 +557,7 @@ padding-bottom:  17.5px;
     margin-top: 0;
     margin-bottom: 0;
 }
+
 .social-media-container-footer {
     margin-bottom: 72px;
 }
@@ -639,6 +637,9 @@ padding-bottom:  17.5px;
 }
 
 @media screen and (min-width: 768px) {
+    .footer-p {
+margin-top: 16px;
+    }
     .footer-div {
         width: 584px;
         display: flex;
@@ -659,7 +660,9 @@ padding-bottom:  17.5px;
     .footer-social-media-p {
         text-align: left; 
     }
-    
+    .social-media-container-footer {
+        margin-left: 24px;
+    }
     .svg-button-subscribe {
         text-align: start;
     }
