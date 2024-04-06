@@ -164,12 +164,7 @@ padding-bottom:  17.5px;
     .ul-address {
         display: flex;
         gap: 40px;
-    }  
-}
-@media screen (min-width:1158px){
-    .ul-address {
-        display: flex;
-        gap: 40px;
+        visibility: visible;
     }  
 }
 .email-tel {
