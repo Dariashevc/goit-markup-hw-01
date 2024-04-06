@@ -106,7 +106,7 @@ background-color: #FFFFFF;">
 <ul class="team-ul">
     <li class="person-li">
         <div>
-            <img  srcset="./images/mark.jpg 1x, ./images/mark@2.jpg 2x" src="./images/mark.jpg" alt="Mark Guerrero" width="264" height="260" class="img-people"/> 
+            <img  srcset="./images/mark.jpg 1x, ./images/mark.jpg 2x" src="./images/mark.jpg" alt="Mark Guerrero" width="264" height="260" class="img-people"/> 
         </div>
         <div class="person-div">
             <h3 class="person-h-three">Mark Guerrero</h3> <p class="job">Product Designer</p> 
@@ -159,7 +159,7 @@ background-color: #FFFFFF;">
         </div>
     </li>
      
-    <li class="person-li"> <img src="./images/tom.jpg" alt="Tom Ford" width="264" height="260" > 
+    <li class="person-li"> <img srcset="./images/tom.jpg 1x, ./images/tom.jpg 2x" src="./images/tom.jpg" alt="Tom Ford" width="264" height="260" > 
         <div class="person-div">
 <h3 class="person-h-three">Tom Ford</h3> <p class="job">Frontend Developer</p> 
      <ul class="social-media-ul">
@@ -211,7 +211,7 @@ background-color: #FFFFFF;">
     </div>
     </li>
 
-    <li class="person-li"> <img src="./images/camila.jpg" alt="Camila Garcia" width="264" height="260"> 
+    <li class="person-li"> <img  srcset="./images/camila.jpg 1x, ./images/camila.jpg 2x" src="./images/camila.jpg" alt="Camila Garcia" width="264" height="260"> 
         <div class="person-div">
             <h3 class="person-h-three">Camila Garcia</h3> <p class="job">Marketing</p> 
             <ul class="social-media-ul">
@@ -263,7 +263,7 @@ background-color: #FFFFFF;">
         </div>
     </li>
 
-    <li class="person-li"> <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" height="260"> 
+    <li class="person-li"> <img srcset="./images/daniel.jpg 1x, ./images/daniel.jpg 2x" src="./images/daniel.jpg" alt="Daniel Wilson" width="264" height="260"> 
         <div class="person-div">
 <h3 class="person-h-three">Daniel Wilson</h3> <p class="job">UI Designer</p> 
       <ul class="social-media-ul">
@@ -321,19 +321,43 @@ background-color: #FFFFFF;">
     <h2 class="portfolio-h-two">Our Portfolio</h2>
     <ul class="portfolio-ul">
 
-        <li class="portfolio-li"> <div class="portfolio-image-div"> <img src="./images/Banking.jpg" alt="Banking" width="360" height="300"> <p class="portfolio-image-p ">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p></div>
-            <div class="portfolio-div">
+        <li class="portfolio-li"> <div class="portfolio-image-div"> 
+            <picture>
+            <source media="min-width 1158px"
+            srcset="./images/Banking.jpg x1, ./images/Banking.jpg x2">
+            <source media="min-width: 768px"
+            srcset="./images/Banking.jpg x1, ./images/Banking.jpg x2">
+            <source media="min-width 320"
+            srcset="./images/Banking.jpg x1, ./images/Banking.jpg x2">
+            <img src="./images/Banking.jpg" alt="Banking" width="360" height="300"></picture> <p class="portfolio-image-p ">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p></div>
+         <div class="portfolio-div">
                 <h3 class="h-three-app">Banking App</h3> <p class="app">App</p> 
             </div>
         </li>
 
-        <li class="portfolio-li"> <div class="portfolio-image-div"><img src="./images/Cashless.jpg" alt="Cashless" width="360" height="300" > <p class="portfolio-image-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p> </div> 
+        <li class="portfolio-li"> <div class="portfolio-image-div">
+            <picture>
+                <source media="min-width 1158px"
+                srcset="./images/Cashless.jpg x1, ./images/Cashless.jpg x2">
+                <source media="min-width: 768px"
+                srcset="./images/Cashless.jpg, ./images/Cashless.jpg x2">
+                <source media="min-width 320"
+                srcset="./images/Cashless.jpg x1, ./images/Cashless.jpg x2">
+                <img src="./images/Cashless.jpg" alt="Cashless" width="360" height="300" ></picture> <p class="portfolio-image-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p> </div> 
             <div class="portfolio-div">
 <h3 class="h-three-app">Cashless Payment</h3> <p class="app">Marketing</p> 
         </div>
     </li>
 
-        <li class="portfolio-li"> <div class="portfolio-image-div"> <img src="./images/Meditation.jpg" alt="Meditation" width="360" height="300"> <p class="portfolio-image-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p></div>
+        <li class="portfolio-li"> <div class="portfolio-image-div"> 
+            <picture>
+                <source media="min-width 1158px"
+                srcset="./images/Cashless.jpg x1, ./images/Cashless.jpg x2">
+                <source media="min-width: 768px"
+                srcset="./images/Cashless.jpg, ./images/Cashless.jpg x2">
+                <source media="min-width 320"
+                srcset="./images/Cashless.jpg x1, ./images/Cashless.jpg x2">
+                <img src="./images/Meditation.jpg" alt="Meditation" width="360" height="300"> </picture> <p class="portfolio-image-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p></div>
             <div class="portfolio-div">
              <h3 class="h-three-app">Meditation App</h3> <p class="app">App</p> 
         </div>
@@ -431,7 +455,7 @@ background-color: #FFFFFF;">
             
             <!-- modal -->
 
-            <div class="modal ">
+            <div class="modal">
                     <div class="modal-window">
                     <button type="button" class="button-modal">
                         <svg 
@@ -516,8 +540,10 @@ background-color: #FFFFFF;">
             
                             </use>
                                 </svg> 
-                            </span>  
-                            I accept the terms and conditions of the <a href="" class="privacy-policy">Privacy Policy </a>
+                                
+                            </span> 
+                            
+                                I accept the terms and conditions of the <a href="" class="privacy-policy">Privacy Policy </a>
                             </label>
                                                 </div>
                                                 <button class="button">

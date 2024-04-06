@@ -190,6 +190,15 @@ padding-bottom:  17.5px;
     line-height: 0;
     background-color: transparent;
     border: none;
+
+}
+@media screen (min-width:768px)
+{
+    .btn-burger {
+        visibility: hidden;
+        opacity:0
+    }
+    
 }
 /* main */
 
@@ -654,7 +663,7 @@ margin-top: 16px;
     
     .footer-div-two {
         display: inline-block;
-        margin-left: 24px;
+        margin-left: 54px;
     }
     
     .footer-social-media-p {
@@ -676,7 +685,9 @@ margin-top: 16px;
     .form-input {
         width: 264px;
     }
-    
+    .footer-form-p {
+        text-align: left;
+    }
     }
     /* /Footer tablet */
     
@@ -719,7 +730,7 @@ margin-top: 16px;
 /* modal */
 .modal {
     position: fixed;
-    z-index: 999999;
+    z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
@@ -733,14 +744,13 @@ margin-top: 16px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 408px;
-    min-height: 584px;
-    background: #fcfcfc;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+    width: 288px;
+    background-color: #fcfcfc;
     border-radius: 4px;
+    padding: 72px 16px 24px 16px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
 }
 .button-modal {
     position: absolute;
@@ -865,6 +875,7 @@ margin-top: 16px;
     fill: transparent;
   
 }
+
 .checkbox:checked 
 + .label-user-privacy 
 > .span-label-user-privacy{
@@ -873,12 +884,11 @@ margin-top: 16px;
     fill:#F4F4FD;
 }
 
-.text-privacy-policy {
-    margin-left: 8px;
-}
+
 .privacy-policy {
     color:#4d5ae5;
     text-decoration: underline;
+    margin-left: 20px;
 }
 .button-send {
     display: block;
