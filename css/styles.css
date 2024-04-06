@@ -112,7 +112,8 @@ padding-bottom:  17.5px;
     display: none;
 }
 @media screen and (min-width:768px){
-    .ul-header { display: flex;
+    .ul-header { 
+        display: flex;
     gap: 40px;}
 }
 .webstudio-li-one {
@@ -160,11 +161,9 @@ padding-bottom:  17.5px;
 .ul-address {
     display: none;
 }
-@media screen (min-width:768px){
+@media screen and (min-width:768px){
     .ul-address {
-        display: flex;
-        gap: 40px;
-        visibility: visible;
+        display: block;
     }  
 }
 .email-tel {
@@ -185,13 +184,11 @@ padding-bottom:  17.5px;
     line-height: 0;
     background-color: transparent;
     border: none;
-
 }
-@media screen (min-width:768px)
+@media screen and (min-width:768px)
 {
     .btn-burger {
-        visibility: hidden;
-        opacity:0
+        display: none;
     }
     
 }
@@ -200,15 +197,57 @@ padding-bottom:  17.5px;
 /* section 1 */
 .section-solutions {
     background-color:#2e2f42;
-    padding-top: 188px; 
-    padding-bottom: 188px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    max-width: 1440px;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding-top: 72px; 
+    padding-bottom: 72px;
+    background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url("../images/hero/people-office-phone.1x.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
     background-size: cover;
     margin: 0 auto;
 }
+@media screen and (min-resolution: 192dpi) and (min-width: 320px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url("../images/hero/people-office-phone.2x.jpg");
+    }
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/hero/people-office-tablet.1x.jpg");
+        padding: 112px 0;
+    }
+}
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)), url("../images/hero/people-office-tablet.2x.jpg");
+        }
+    }
+
+        @media screen and (min-width: 1158px) {
+            .hero {
+                max-width: 1440px;
+                background-position: center;
+                background-image:
+                    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                    url("../images/hero/people-office.jpg");
+                padding: 188px 0;
+            }
+        }
+            @media screen and (min-resolution: 192dpi) and (min-width: 1158px) {
+                .hero {
+                    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                            rgba(46, 47, 66, 0.7)), url("../images/hero/people-office.2x.jpg");
+                }
+            }
+
 .h-one-solutions {
     font-size: 56px;
     line-height: 1.07;
@@ -328,7 +367,7 @@ padding-bottom:  17.5px;
     color: #434455;
 }
 
-@media screen (min-width:1158px ) {
+@media screen and (min-width:1158px ) {
     .advantages-p {
         font-weight: 400;}
 }
@@ -353,12 +392,27 @@ padding-bottom:  17.5px;
     flex-direction: column;
     gap:72px;
 }
-@media screen (min-width:768px) {
+@media screen and (min-width: 768px) {
+    .section-team {
+            padding-top: 96px;
+                padding-bottom: 72px;
+    }
     .team-ul {
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 72px 24px;
+        gap: 64px 24px;
+        margin-bottom: 24px;
     }
+            .person-li {
+                background-color: #FFFFFF;
+                width: 264px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 4px;
+                border-bottom-left-radius: 4px;
+                box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+            }
 }
 
 .person-li {
@@ -369,18 +423,6 @@ padding-bottom:  17.5px;
     border-bottom-right-radius: 4px; 
     border-bottom-left-radius:4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-@media screen (min-width:768px)
-{
-    .person-li {
-        background-color: #FFFFFF;
-        width: calc((100% - 72px)/4);
-        border-top-left-radius: 0px; 
-        border-top-right-radius: 0px ; 
-        border-bottom-right-radius: 4px; 
-        border-bottom-left-radius: 4px;
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    }
 }
 .person-div {
     padding-top: 32px; 
@@ -500,6 +542,7 @@ padding-bottom:  17.5px;
 .portfolio-image-div {
     position: relative;
     overflow: hidden;
+    
 }
 .portfolio-image-p {
     position: absolute;
@@ -530,6 +573,27 @@ padding-bottom:  17.5px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-section {
+        padding: 96px 0;
+    }
+
+        .portfolio-ul {
+        gap: 24px;
+        row-gap: 72px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+        .portfolio-li {
+        width: calc((100% - 48px) / 2);
+    }
+
+        .portfolio-image-p {
+        text-align: left;
+    }
 }
 
 /* footer */
@@ -647,7 +711,7 @@ margin-top: 16px;
     .footer-div {
         width: 584px;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     
     .webstudio-footer {
@@ -673,7 +737,7 @@ margin-top: 16px;
         
     .the-form {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 24px;
     }
     
@@ -689,34 +753,86 @@ margin-top: 16px;
     
     /* Desktop footer */
     @media screen and (min-width: 1158px) {
-    .container-footer {
-        width: 1158px;
-    }
-    
-    .webstudio-footer {
-        margin-right: 120px;
-        margin-bottom: 0;
-    }
-    
-    .the-form {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 24px;
-    }
-    
-    .footer-div-two {
-        margin-right: 80px;
-        margin-left: 0;
-        margin-bottom: 0;
-    }
-    
-      .form-input {
-        opacity: 1;
-    }
-    
-    .button-subscribe {
-        margin-bottom: 0;
-    }
+    .footer {
+    background-color :#2e2f42 ;
+    padding-top: 100px; 
+    padding-bottom: 100px;
+}
+.footer-div {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+ 
+}
+.footer-div-two {
+    margin-right: 120px;
+}
+.footer-p {
+    line-height: 1.5;
+    color:  #F4F4FD;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
+.social-media-container-footer {
+    margin-right: 80px;
+}
+.footer-social-media-p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.span {
+    color: #f4f4fd;
+}
+.footer-form-p {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+.the-form {
+    display: flex; 
+    gap: 24px;
+}
+.form-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff; 
+}
+.button-subscribe {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff ;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+}
+.svg-button-subscribe {
+    margin-left: 16px;
+}
+
 }
 
 
@@ -900,7 +1016,200 @@ margin-top: 16px;
     background-color: #4D5AE5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1158px),
+screen and (min-width: 768px) {
+.modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(46, 47, 66, 0.4);
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
+    .modal-window {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 408px;
+        min-height: 584px;
+        background: #fcfcfc;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 72px 24px 24px 24px;
+    }
+
+    .button-modal {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e7e9fc;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .button-modal:hover {
+        background-color: #404bbf;
+        border: none;
+        fill: #ffffff;
+    }
+
+    .button-modal:focus {
+        background-color: #404bbf;
+        border: none;
+        fill: #ffffff;
+    }
+
+    .svg-button-modal {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .modal-p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        margin-bottom: 16px;
+    }
+
+    .div-form-modal {
+        margin-bottom: 8px;
+    }
+
+    .label-form-modal {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        display: block;
+        margin-bottom: 4px
+    }
+
+    .label-div-modal {
+        position: relative;
+    }
+
+    .input-modal {
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        background-color: transparent;
+        padding-left: 38px;
+        outline: transparent;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .input-modal:focus {
+        border-color: #4D5AE5;
+    }
+
+    .svg-input-modal {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .div-form-modal-big {
+        margin-bottom: 16px
+    }
+
+    .input-modal:focus+.svg-input-modal {
+        fill: #4D5AE5;
+    }
+
+    .textarea {
+        width: 100%;
+        height: 120px;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        background-color: transparent;
+        padding: 8px 16px;
+        outline: transparent;
+        resize: none;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .textarea:focus {
+        border-color: #4D5AE5;
+    }
+
+    .label-div-modal-small {
+        margin-bottom: 24px;
+    }
+
+    .label-user-privacy {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+    }
+
+    .span-label-user-privacy {
+        width: 16px;
+        height: 16px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 2px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        fill: transparent;
+
+    }
+
+    .checkbox:checked+.label-user-privacy>.span-label-user-privacy {
+        background-color: #404bbf;
+        border: none;
+        fill: #F4F4FD;
+    }
+
+    .text-privacy-policy {
+        margin-left: 8px;
+    }
+
+    .privacy-policy {
+        color: #4d5ae5;
+        text-decoration: underline;
+        margin: 0;
+    }
+
+    .button-send {
+        display: block;
+        min-width: 169px;
+        height: 56px;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        cursor: pointer;
+        border: none;
+        background-color: #4D5AE5;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
 
 /* menu phone */
 .backdrop-for-modal {
@@ -1007,4 +1316,273 @@ margin-top: 16px;
 .backdrop-for-modal {
     display: none;
 }
+}
+@media screen and (min-width: 1158px){
+    .header {
+            border-bottom: 1px solid #e7e9fc;
+            box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+        }
+    
+        .div-header {
+            display: flex;
+            width: 1158px;
+            margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            container: normal;
+            align-items: center;
+        }
+    
+        .nav-header {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+        }
+    
+        .webstudio-link {
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.17;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #4d5ae5;
+            margin-right: 76px;
+            display: inline-block;
+        }
+    
+        .webstudio-footer {
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.17;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #4d5ae5;
+            margin-right: 76px;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+                .webstudio-li-one {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: 0.02em;
+                    color: #2e2f42;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+                    display: block;
+                    position: relative;
+                    color: #404bbf;
+                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+        
+                .webstudio-li-one:hover {
+                    color: #404bbf
+                }
+        
+                .webstudio-li-one:focus {
+                    color: #404bbf
+                }
+        
+                .webstudio-li-one::after {
+                    content: "";
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: -1px;
+                    height: 4px;
+                    background-color: #404bbf;
+                    border-radius: 2px;
+                }
+        
+                .webstudio-li {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: 0.02em;
+                    color: #2e2f42;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+                    display: block;
+                }
+        
+                .address {
+                    font-style: normal;
+                }
+        
+                .ul-address {
+                    display: flex;
+                    gap: 40px;
+                }
+        
+                .email-tel {
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: 0.02em;
+                    color: #434455;
+                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+        
+                .email-tel:hover {
+                    color: #404bbf
+                }
+        
+                .email-tel:focus {
+                    color: #404bbf
+                }
+
+                
+                                .h-one-solutions {
+                                    font-size: 56px;
+                                    line-height: 1.07;
+                                    text-align: center;
+                                    letter-spacing: 0.02em;
+                                    color: #ffffff;
+                                    max-width: 496px;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    margin-bottom: 48px;
+                                }
+                
+                                .button {
+                                    background-color: #4D5AE5;
+                                    font-family: 'Roboto', sans-serif;
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 1.5;
+                                    letter-spacing: 0.04em;
+                                    color: #ffffff;
+                                    cursor: pointer;
+                                    display: block;
+                                    min-width: 169px;
+                                    border: none;
+                                    height: 56px;
+                                    height: 56px;
+                                    border-radius: 4px;
+                                    cursor: pointer;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                                }
+                
+                                .button:hover {
+                                    background-color: #404BBF;
+                                }
+                
+                                .button:focus {
+                                    background-color: #404BBF;
+                                }
+                
+                                
+                                .section-advantages {
+                                    padding-top: 120px;
+                                    padding-bottom: 120px;
+                                }
+
+                                                                .section-team {
+                                                                    background-color: #F4F4FD;
+                                                                    padding-top: 120px;
+                                                                    padding-bottom: 120px;
+                                                                }
+                                
+                                                                .team-h-two {
+                                                                    font-size: 36px;
+                                                                    line-height: 1.11;
+                                                                    text-align: center;
+                                                                    letter-spacing: 0.02em;
+                                                                    text-transform: capitalize;
+                                                                    color: #2e2f42;
+                                                                    margin-bottom: 72px;
+                                                                }
+                                
+                                                                .team-ul {
+                                                                    flex-direction: row;
+                                                                        flex-wrap: wrap;
+                                                                        gap: 72px 24px;}
+
+                                                                                                                                                .portfolio-section {
+                                                                                                                                                    padding-top: 120px;
+                                                                                                                                                    padding-bottom: 120px;
+                                                                                                                                                }
+                                                                        
+                                                                                                                                                .portfolio-h-two {
+                                                                                                                                                    font-size: 36px;
+                                                                                                                                                    line-height: 1.11;
+                                                                                                                                                    text-align: center;
+                                                                                                                                                    letter-spacing: 0.02em;
+                                                                                                                                                    text-transform: capitalize;
+                                                                                                                                                    color: #2e2f42;
+                                                                                                                                                    margin-bottom: 72px;
+                                                                                                                                                }
+                                                                        
+                                                                                                                                                .portfolio-ul {
+                                                                                                                                                    display: flex;
+                                                                                                                                                    flex-wrap: wrap;
+                                                                                                                                                    column-gap: 24px;
+                                                                                                                                                    row-gap: 48px;
+                                                                                                                                                }
+                                                                        
+                                                                                                                                                .portfolio-li {
+                                                                                                                                                    background-color: #fff;
+                                                                                                                                                    width: calc((100% - 48px)/3);
+                                                                                                                                                    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                                                                                }
+                                                                        
+                                                                                                                                                .portfolio-li:hover .portfolio-image-p {
+                                                                                                                                                    transform: translateY(0);
+                                                                                                                                                }
+                                                                        
+                                                                                                                                                .portfolio-li:hover {
+                                                                                                                                                    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+                                                                                                                                                }
+                                                                        
+                                                                                                                                                .portfolio-div {
+                                                                                                                                                    padding: 32px 16px;
+                                                                                                                                                    border: 1px solid #e7e9fc;
+                                                                                                                                                    border-top: none;
+                                                                                                                                                }
+                                                                        
+                                                                                                                                                .portfolio-image-div {
+                                                                                                                                                    position: relative;
+                                                                                                                                                    overflow: hidden;
+                                                                                                                                                }
+                                                                        
+                                                                                                                                                .portfolio-image-p {
+                                                                                                                                                    position: absolute;
+                                                                                                                                                    top: 0;
+                                                                                                                                                    font-size: 16px;
+                                                                                                                                                    line-height: 1.5;
+                                                                                                                                                    letter-spacing: 0.02em;
+                                                                                                                                                    color: #f4f4fd;
+                                                                                                                                                    ;
+                                                                                                                                                    padding: 40px 32px;
+                                                                                                                                                    background-color: #4d5ae5;
+                                                                                                                                                    height: 100%;
+                                                                                                                                                    width: 100%;
+                                                                                                                                                    transform: translateY(100%);
+                                                                                                                                                    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                                                                                }
+                                                                        
+                                                                                                                                                .h-three-app {
+                                                                                                                                                    font-weight: 500;
+                                                                                                                                                    font-size: 20px;
+                                                                                                                                                    line-height: 1.2;
+                                                                                                                                                    line-height: 1.2;
+                                                                                                                                                    letter-spacing: 0.02em;
+                                                                                                                                                    color: #2e2f42;
+                                                                                                                                                    margin-bottom: 8px
+                                                                                                                                                }
+                                                                        
+                                                                                                                                                .app {
+                                                                                                                                                    font-size: 16px;
+                                                                                                                                                    line-height: 1.5;
+                                                                                                                                                    letter-spacing: 0.02em;
+                                                                                                                                                    color: #434455;
+                                                                                                                                                }
+                                                                        
+
+                                                                        
+    
 }
