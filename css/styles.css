@@ -845,13 +845,12 @@ margin-top: 16px;
                 }
             
                 .footer-div {
-                    height: 112px;
-                    width: 1440px;
+                max-width: 1158px;
                     display: flex;
+                    flex-direction: row;
                     flex-wrap: nowrap;
                     align-items: baseline;
-                   margin: 0;
-                   padding: 0;
+                    gap: unset;
                    
                 }
             
@@ -1452,20 +1451,6 @@ screen and (min-width: 768px) {
             margin-right: 76px;
             display: inline-block;
         }
-    
-        .webstudio-footer {
-            font-family: "Raleway", sans-serif;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 1.17;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: #4d5ae5;
-            margin-right: 76px;
-            display: inline-block;
-            margin-bottom: 16px;
-        }
-
                 .webstudio-li-one {
                     font-weight: 500;
                     font-size: 16px;
